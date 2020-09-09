@@ -1,11 +1,17 @@
 <template>
-  <div class="wrapper">
-    <router-view></router-view>
-  </div>
+	<div class="wrapper">
+		<defaultHeader />
+		<router-view></router-view>
+	</div>
 </template>
 
 <script>
-export default {};
+	import defaultHeader from '@/components/Header';
+	export default {
+		components: {
+			defaultHeader
+		}
+	};
 </script>
 
 <style>
